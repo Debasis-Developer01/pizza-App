@@ -4,6 +4,18 @@ import ApiService from "../service/ApiService";
 function Pizza() {
 	let [allcategories, setallCategories] = useState([]);
 	let apiService = new ApiService();
+	const imageUrls = [
+		"https://as1.ftcdn.net/v2/jpg/01/33/61/72/1000_F_133617244_dWdivRXwoLVzowl1kn3iFP9JGcuNd8n6.jpg",
+		"https://as1.ftcdn.net/v2/jpg/02/10/80/40/1000_F_210804077_nQ8XWe2fBvrCfDP8t1GumjuhHZneikRM.jpg",
+		"https://as1.ftcdn.net/v2/jpg/01/74/36/70/1000_F_174367045_6hyh7c8Mkju5Qn1O7mLQqmtfChQMdxZa.jpg",
+		"https://as1.ftcdn.net/v2/jpg/00/27/57/96/1000_F_27579652_tM7V4fZBBw8RLmZo0Bi8WhtO2EosTRFD.jpg",
+	];
+
+	function getRandomImageUrl() {
+		const randomIndex = Math.floor(Math.random() * imageUrls.length);
+		return imageUrls[randomIndex];
+	}
+
 	useEffect(() => {
 		apiService.getAllCategory().then(
 			(res) => {
@@ -21,7 +33,10 @@ function Pizza() {
 				<div key={category.categoryId} className='cat col-md-4 mb-4'>
 					<div className='card'>
 						<img
-							src='https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp'
+							height={150}
+							width={150}
+							style={{ objectFit: "cover" }}
+							src={getRandomImageUrl()}
 							class='card-img-top'
 							alt='Fissure in Sandstone'
 						/>
