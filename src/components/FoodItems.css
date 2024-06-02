@@ -1,0 +1,39 @@
+.food.container {
+    max-width: 1200px;
+    margin: 0 auto;
+   
+  }
+  .food.card{
+    border: 1px solid rgb(239, 231, 231);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+  }
+  .food.card:hover {
+    transform: scale(1.05);
+  }
+  .food.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 250px;
+    object-fit: fill;
+    height: 300px;
+  }
+  .food.card-body {
+    padding: 1rem;
+  }
+  .food.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .food.btn {
+    margin-top: 0.5rem;
+  }
+  
+  .food .col-md-4 {
+    flex-basis: calc(33.33% - 1rem);
+    margin-bottom: 1rem;
+  }
+  .food.row{
+    background-color: rgb(236, 250, 245);
+  }

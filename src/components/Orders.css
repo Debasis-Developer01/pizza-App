@@ -1,0 +1,176 @@
+.searchdiv
+{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 0.5cm;
+  
+}
+.fooddiv
+{
+  background-color: rgba(225,225,225,0.7);
+  height: 700px;
+  width: 1215px;
+}
+.food-fiesta
+{
+  color: white;
+}
+.inputsearch
+{
+  width: 30%;
+}
+.form-label
+{
+  margin-right:0.5cm;
+}
+.placeordercard
+{
+  margin-top:3cm;
+  width:30%;
+  margin-left: 35%;
+  padding: 0.5cm;
+  border-radius: 0.5cm;
+  background-color: rgba(0,0,0,1);
+  color: white;
+}
+.orderhead 
+{
+  background-color: rgb(50, 214, 24);
+  width: 90%;
+  margin: 0.5cm;
+}
+.cancelledHeader
+{
+  background-color: rgb(217, 21, 21);
+}
+.menubtn
+{
+  width: 5cm;
+  float: left;
+  margin-left:35%;
+  padding: 0.5cm;
+}
+.loginbtn
+{
+  width: 5cm;
+  float: left;
+  margin-top:5%;
+  margin-left: 32%;
+  padding: 0.5cm;
+}
+.menudiv
+{
+  margin-left: 5cm;
+}
+.ordercard
+{
+  width:10cm;
+  float:left;
+  left:4cm;
+  margin-left: 2cm;
+  margin-top: 1cm;
+  padding: 0.5cm;
+  border-radius: 0.5cm;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+}
+.myordercard
+{
+  width:30%;
+  float:left;
+  margin:0.5cm;
+  padding: 0.5cm;
+  border-radius: 0.5cm;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+}
+.ord
+{
+  margin:3px;
+}
+.ordercard:hover
+{
+  box-shadow:  0 0 50px whitesmoke;
+  border: dashed white 2px;
+}
+.cancelordercard
+{
+  width:30%;
+  left:35%;
+  top:2cm;
+  padding: 0.5cm;
+  border: lightgray solid 3px;
+  border-radius: 0.5cm; 
+}
+.form-control
+{
+  width: 50%;
+  margin-left: 2.3cm;
+  margin-top: 0.25cm;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.orderbtn
+{
+  width:50%;
+  margin-top: 0.2cm;
+  border-radius: 0.5cm;
+  padding: 0.2cm ;
+}
+.orderbtn2
+{
+  width:50%;
+  margin-top:-23%;
+  margin-left: 55%;
+  border-radius: 0.5cm;
+  padding: 0.2cm ;
+}
+.updatediv
+{
+  margin-top:4cm;
+  width:30%;
+  margin-left: 37%;
+  padding: 1cm;
+  border-radius: 0.5cm;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+}
+.orderbtn1
+{
+  width:50%;
+  border-radius: 0.5cm;
+  padding: 0.2cm ;
+  border: grey;
+}
+.f
+{
+  margin-top:2.7cm;
+  width:30%;
+  margin-left: 35%;
+  padding: 0.5cm;
+  border-radius: 0.5cm;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+}
+.cart
+{
+  margin-top:5cm;
+  width:30%;
+  margin-left: 35%;
+  border: lightgray solid 2px;
+  padding: 2cm;
+}
+.lbtn:hover
+{
+  background-color: black;
+  color: lightblue;
+}
+.lbtn
+{
+  color:white;
+  border-radius: 1cm;
+  margin-left: 0.4cm;
+  margin-right: 0.5cm;
+}

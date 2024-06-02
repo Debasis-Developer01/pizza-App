@@ -1,0 +1,96 @@
+.customer-container {
+    height: 100%;
+    width: 100%;
+}
+.customer-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.customer-nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.customer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.customer-menu-item {
+    margin: 0;
+}
+
+.customer-menu-item button {
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    background-color: #ff6699;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.customer-menu-item button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.customer-menu-item button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.customer-menu-item button:hover {
+    background-color: #ff3366;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.customer-menu-item button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .customer-title {
+        font-size: 2.2rem;
+    }
+
+    .customer-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .customer-menu-item button {
+        width: 100%;
+        padding: 12px 0;
+    }
+}

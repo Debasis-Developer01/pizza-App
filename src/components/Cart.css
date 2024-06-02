@@ -1,0 +1,13 @@
+
+.cart1 {
+  margin-top: 20px;
+}
+.cart2{
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(247, 241, 241, 0.2);
+  transition: box-shadow 0.3s;
+}
+.cart2:hover{
+  box-shadow: 0 3px 10px 0  rgba(247, 241, 241, 1.5);
+  background-color: #deeaea;
+}

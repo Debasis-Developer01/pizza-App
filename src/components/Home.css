@@ -1,0 +1,19 @@
+
+.login-register-background {
+    background-image: url("C:\Users\DEBSAHOO\pizza-online\public\Images\LoginPhoto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .admin-background {
+    background-image: url("C:\Users\DEBSAHOO\pizza-online\public\Images\adminhome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .customer-background {
+    background-image: url("C:\Users\DEBSAHOO\pizza-online\public\Images\customerhome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  

@@ -1,0 +1,83 @@
+CustomerSearch.css
+
+.customer-search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.customer-search-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.customer-search-container input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+.customer-search-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.customer-search-container button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.customer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.customer-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.customer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.customer-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.customer-card p {
+    color: #666;
+    margin: 5px 0;
+    font-size: 14px;
+}

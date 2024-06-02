@@ -1,0 +1,50 @@
+.addcnt  {
+    display: flex;
+    justify-content: center; /* Center align the form horizontally */
+    align-items: center; /* Center align the form vertically */
+    width:100vh;
+    height: 250vh; /* Set the height of the container to full viewport height */
+    background-color: rgba(249, 248, 248, 0.85); /* Set the background color of the form with opacity */
+    backdrop-filter: blur(5px); /* Add a blur effect to the background */
+}
+ 
+.addin {
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(204, 174, 174);
+    color: rgb(248, 244, 245); /* Set the text color of the form to pink */
+    box-shadow: 0 4px 8px rgba(20, 20, 20, 0.1);
+}
+ 
+.add{
+    font-weight: bold;
+    /* Make the labels bold */
+    color: rgb(0, 0, 0);
+}
+ 
+form input {
+    width:calc(100% - 16px); /* Make the input fields full width and subtract 16px for padding */
+    padding: 8px; /* Add some padding */
+    margin-bottom: 10px; /* Add some space between input fields */
+    border: 1px solid #c9c2c2; /* Add border */
+    border-radius: 5px; /* Add rounded corners */
+}
+ 
+form .error {
+    color: red; /* Set error message color to red */
+}
+ 
+.cbtn {
+    width: 100%; /* Make the button full width */
+    padding: 10px; /* Add padding */
+    background-color: #007bff; /* Set button background color */
+    color: white; /* Set button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+ 
+form button:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+}

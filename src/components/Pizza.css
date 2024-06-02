@@ -1,0 +1,47 @@
+/* Pizza.css */
+
+.cat {
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.cat .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.cat .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cat .card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.cat .card-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.cat .add-pizza-btn {
+    background-color: #0a7f49; /* Green color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cat .add-pizza-btn:hover {
+    background-color: #0a7f49; /* Darker shade of green on hover */
+    transform: translateY(-2px);
+}
