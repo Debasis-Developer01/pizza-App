@@ -1,111 +1,114 @@
-
 .admin-container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 40px;
-    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 40px;
+	background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+	border-radius: 20px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
 }
 
 .admin-container:hover {
-    transform: scale(1.02);
+	transform: scale(1.02);
 }
 
 .admin-title {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #333;
-    font-weight: bold;
-    position: relative;
-    animation: fadeIn 1s ease-in-out;
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 40px;
+	color: #333;
+	font-weight: bold;
+	position: relative;
+	animation: fadeIn 1s ease-in-out;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .admin-nav {
-    text-align: center;
-    margin-bottom: 30px;
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 .admin-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
 }
 
 .admin-menu-item {
-    margin: 0;
+	margin: 0;
 }
 
 .admin-menu-item button {
-    padding: 15px 35px;
-    font-size: 1.2rem;
-    background-color: #ff6699;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+	padding: 15px 35px;
+	font-size: 1.2rem;
+	background-color: #ff6699;
+	color: #fff;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
 }
 
 .admin-menu-item button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background-color: rgba(255, 255, 255, 0.15);
-    transition: all 0.3s ease-in-out;
-    border-radius: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%) scale(0);
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300%;
+	height: 300%;
+	background-color: rgba(255, 255, 255, 0.15);
+	transition: all 0.3s ease-in-out;
+	border-radius: 50%;
+	z-index: -1;
+	transform: translate(-50%, -50%) scale(0);
 }
 
 .admin-menu-item button:hover::before {
-    transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(1);
 }
 
 .admin-menu-item button:hover {
-    background-color: #ff3366;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	background-color: #ff3366;
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .admin-menu-item button:active {
-    transform: translateY(2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transform: translateY(2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
-    .admin-container {
-        padding: 20px;
-    }
+	.admin-container {
+		padding: 20px;
+	}
 
-    .admin-title {
-        font-size: 2.2rem;
-    }
+	.admin-title {
+		font-size: 2.2rem;
+	}
 
-    .admin-menu {
-        flex-direction: column;
-        gap: 15px;
-    }
+	.admin-menu {
+		flex-direction: column;
+		gap: 15px;
+	}
 
-    .admin-menu-item button {
-        width: 100%;
-        padding: 12px 0;
-    }
+	.admin-menu-item button {
+		width: 100%;
+		padding: 12px 0;
+	}
 }

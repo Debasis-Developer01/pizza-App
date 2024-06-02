@@ -1,19 +1,17 @@
-
 .login-register-background {
-    background-image: url("C:\Users\DEBSAHOO\pizza-online\public\Images\LoginPhoto.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .admin-background {
-    background-image: url("C:\Users\DEBSAHOO\pizza-online\public\Images\adminhome.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .customer-background {
-    background-image: url("C:\Users\DEBSAHOO\pizza-online\public\Images\customerhome.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  
+	background-image: url("../../public/Images/LoginPhoto.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.admin-background {
+	background-image: url("../../public/Images/adminhome.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.customer-background {
+	background-image: url("../../public/Images/customerhome.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
